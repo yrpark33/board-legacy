@@ -1,44 +1,4 @@
-Spring Legacy 기반으로 구현한 CRUD 게시판 프로젝트입니다.  
-게시글 CRUD, 댓글 비동기(AJAX) 처리, 첨부파일 업로드 기능을 포함하며  
-MVC 아키텍처와 트랜잭션, 예외 처리 구조를 학습하고 적용했습니다.
-
-<hr/>
-
-**기술 스택**
-- **Language**: Java 17  
-- **Framework**: Spring MVC (Legacy), MyBatis
-- **Database**: MariaDB
-- **View**: JSP, JSTL, Bootstrap 5
-- **Server**: Apache Tomcat 10.1.44
-- **Tools**: Eclipse, Maven
-
-<hr>
-
-**실행방법**
-
-1. **MariaDB 데이터베이스 생성**
-   - DB 스키마 파일 위치:  `src/main/resources/schema.sql`  
-   - `schema.sql` 파일을 실행하여 테이블 구조를 생성합니다.
-
-2. **DB 접속 정보 수정**  
-   - `src/main/webapp/WEB-INF/spring/root-context.xml` 파일에서  
-     `<bean id="dataSource">` 부분의 URL, username, password를  
-     실제 DB 환경에 맞게 수정합니다.  
-          
-3. **첨부파일 업로드 경로 생성**
-   - `config.properties` 또는 `FileService` 내 업로드 경로 설정값을 확인하세요.  
-
-4. **서버 실행**  
-   - Apache **Tomcat 10** 서버에 배포 및 실행합니다.
-
-5. **접속 확인**  
-   - 브라우저에서 http://localhost:8080/board/list 또는 http://localhost:8080/product/list 에 접속하여 메인화면을 확인합니다.
-
-
-
-<hr>
-
-**UI 템플릿**  
-https://startbootstrap.com/template/sb-admin  
-화면 구성은 해당 템플릿을 일부 수정하여 사용하였으며,  
-코드 중심 저장소를 유지하기 위해 .gitattributes로 대용량 리소스는 제외하였습니다.
+Spring 기반 웹 프로젝트를 직접 구현하며
+서버–애플리케이션–DB 간 구조를 이해하였습니다.
+기능 구현뿐 아니라 오류 발생 시 로그를 분석하고
+원인을 추적하는 과정을 경험하였습니다.
